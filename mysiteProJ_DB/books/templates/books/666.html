@@ -1,0 +1,8 @@
+{{y}}
+
+<form action="{% url 'books:index2' %}" method="post">
+{% csrf_token %}
+    <label for="uname"><b>Query</b></label>
+    <input type="text" placeholder="SQL" name="sql_code">
+    <button type="submit">OK</button>
+</form>
